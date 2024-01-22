@@ -1,5 +1,5 @@
 {% set name = "ansi" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ansi-{{ version }}.tar.gz
-  sha256: 10545ce2508e470e9208d0cc200616032fdc81b849678826fb7c81c823fd48b1
+  sha256: 7e59108922259e03c54e4d93fc611bba0e756513086849708b86b6c80f8d4cd4
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
